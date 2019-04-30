@@ -1,2 +1,7 @@
+# Dependency packages
 node_modules
 .DS_Store
+
+# Sensitive information
+newrelic.js
+newrelic_agent.log

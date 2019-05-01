@@ -62,13 +62,13 @@ app.use('/api/accounts/:account_number', (req, res) => {
 //
 
 app.use('/api/stocks/:symbol/ratings', (req, res) => {
-  charts.get(`/api/stocks/${req.params.symbol}/ratings`)
+  ratingsHistory.get(`/api/stocks/${req.params.symbol}/ratings`)
     .then(response => res.send(response.data))
     .catch(err => res.status(500).send(err));
 });
 
 app.use('/api/stocks/:symbol/history', (req, res) => {
-  charts.get(`/api/stocks/${req.params.ticker}/history`)
+  ratingsHistory.get(`/api/stocks/${req.params.ticker}/history`)
     .then(response => res.send(response.data))
     .catch(err => res.status(500).send(err));
 });

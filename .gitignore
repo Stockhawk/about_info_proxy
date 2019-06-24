@@ -1,2 +1,11 @@
+# Dependency packages
 node_modules
 .DS_Store
+
+# Logs and output files
+nohup.out
+newrelic_agent.log
+
+# Sensitive information
+newrelic.js
+
